@@ -1,9 +1,4 @@
 @echo off 
-
-F:
-
-cd  F:\pyTest\qier  
-
+cd  F:\pyTest\Qier 
 scrapy crawl qierspider
-
 pause

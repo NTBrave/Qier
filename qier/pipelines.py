@@ -11,7 +11,7 @@ class QierPipeline(object):
     def __init__(self):
         self.file = codecs.open('qieranchor.csv', 'wb+', encoding='utf-8')  # 创建以utf-8编码的csv文件
         client = pymongo.MongoClient('localhost', 27017)  # 创建mongodb连接
-        db = client['qier88']  # 创建mongodb数据库
+        db = client['qier']  # 创建mongodb数据库
         self.collection = db['qieranchor']  # 创建数据库中collection
 
     def process_item(self, item, spider):
