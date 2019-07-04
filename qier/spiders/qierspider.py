@@ -3,7 +3,7 @@ from scrapy.http import Request
 from qier.items import QierItem
 
 class qierSpider(scrapy.Spider):
-    name = 'qierspider'
+    name = 'qier'
     allowed_domains = ['egame.qq.com']  # 设置爬虫允许抓取的
     start_urls = ['http://egame.qq.com/gamelist']  # 设置第一个爬取的url
     allow_pagenum = 5;  # 设置爬取频道的数量
